@@ -1,46 +1,44 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Spartan:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Spartan:wght@400;500;600;700&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: ;
+  --header-height: 4rem;
 
   /*========== Colors ==========*/
-  /* Color mode HSL(hue, saturation, lightness) */
-  --first-color: ;
-  --first-color-alt: ;
-  --second-color: ;
-  --title-color: ;
-  --text-color: ;
-  --text-color-light: ;
-  --body-color: ;
-  --container-color: ;
-  --border-color: ;
-  --border-color-alt: ;
+  --first-color: hsl(176, 88%, 27%);
+  --first-color-alt: hsl(129, 44%, 94%);
+  --second-color: hsl(34, 94%, 87%);
+  --title-color: hsl(0, 0%, 13%);
+  --text-color: hsl(154, 13%, 32%);
+  --text-color-light: hsl(60, 1%, 56%);
+  --body-color: hsl(0, 0%, 100%);
+  --container-color: hsl(0, 0%, 93%);
+  --border-color: hsl(129, 36%, 85%);
+  --border-color-alt: hsl(113, 15%, 90%);
 
   /*========== Font and typography ==========*/
-  /* .5rem = 8px | 1rem = 16px ... */
-  --body-font: ;
-  --second-font: ;
-  --big-font-size: ;
-  --h1-font-size: ;
-  --h2-font-size: ;
-  --h3-font-size: ;
-  --h4-font-size: ;
-  --large-font-size: ;
-  --normal-font-size: ;
-  --small-font-size: ;
-  --smaller-font-size: ;
-  --tiny-font-size: ;
+  --body-font: "Lato", sans-serif;
+  --second-font: "League Spartan" sans-serif;
+  --big-font-size: 3.5rem;
+  --h1-font-size: 2.75rem;
+  --h2-font-size: 2rem;
+  --h3-font-size: 1.75rem;
+  --h4-font-size: 1.375rem;
+  --large-font-size: 1.125rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.75rem;
+  --tiny-font-size: 0.6875rem;
 
   /*========== Font weight ==========*/
-  --weight-400: ;
-  --weight-500: ;
-  --weight-600: ;
-  --weight-700: ;
+  --weight-400: 400;
+  --weight-500: 500;
+  --weight-600: 600;
+  --weight-700: 700;
 
   /*========== Transition ==========*/
-  --transition: ;
+  --transition: cubic-bezier(0, 0, 0.05, 1);
 }
 
 /* Responsive typography */
@@ -60,6 +58,50 @@
 }
 
 /*=============== BASE ===============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input,
+textarea,
+body {
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: var(--weight-400);
+}
+body {
+  background-color: var(--body-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--second-font);
+  color: var(--title-color);
+  font-weight: var(--weight-600);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+p {
+  line-height: 1.5rem;
+}
+img {
+  max-width: 100%;
+}
+button,
+textarea,
+input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 
