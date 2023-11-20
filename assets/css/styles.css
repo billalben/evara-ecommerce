@@ -116,6 +116,15 @@ input {
   padding-inline: .75rem;
 }
 
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section--lg {
+  padding-block: 4rem;
+}
+
 .form__input {
   border: 1px solid var(--border-color-alt);
   padding-inline: 1rem;
@@ -251,8 +260,71 @@ input {
 }
 
 /*=============== HOME ===============*/
+.home__container {
+  grid-template-columns: 5fr 7fr;
+  align-items: center;
+}
+
+.home__subtitle,
+.home__description {
+  font-size: var(--large-font-size);
+}
+
+.home__subtitle {
+  font-family: var(--second-font);
+  font-weight: var(--weight-600);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.home__title {
+  font-size: var(--h1-font-size);
+  font-weight: var(--weight-700);
+  line-height: 1.4;
+}
+
+.home__title span {
+  color: var(--first-color);
+  font-size: var(--big-font-size);
+}
+
+.home__description {
+  margin-block: .5rem 2rem;
+}
+
+.home__img {
+  justify-self: flex-end;
+}
 
 /*=============== BUTTONS ===============*/
+.btn {
+  display: inline-block;
+  background-color: var(--first-color);
+  border: 2px solid var(--first-color);
+  color: var(--body-color);
+  /* padding-inline: 1.75rem; */
+  padding: .75rem 1.75rem;
+  /* height: 49px; */
+  /* line-height: 43px; */
+  font-family: var(--second-font);
+  font-size: var(--small-font-size);
+  font-weight: var(--weight-700);
+  border-radius: .25rem;
+  -webkit-border-radius: .25rem;
+  -moz-border-radius: .25rem;
+  -ms-border-radius: .25rem;
+  -o-border-radius: .25rem;
+  transition: all 0.4s var(--transition);
+  -webkit-transition: all 0.4s var(--transition);
+  -moz-transition: all 0.4s var(--transition);
+  -ms-transition: all 0.4s var(--transition);
+  -o-transition: all 0.4s var(--transition);
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--first-color);
+}
 
 /*=============== CATEGORIES ===============*/
 
