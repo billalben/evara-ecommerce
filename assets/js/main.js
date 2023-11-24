@@ -7,9 +7,20 @@
 /* Validate if constant exists */
 
 /*=============== IMAGE GALLERY ===============*/
+function imgGallery() {
+  const mainImg = document.querySelector(".details__img"),
+    smallImg = document.querySelectorAll(".details__small-img");
+
+    smallImg.forEach((img) => {
+      img.addEventListener("click", function () {
+        mainImg.src = this.src;
+      })
+    })
+}
+
+imgGallery();
 
 /*=============== SWIPER CATEGORIES ===============*/
-
 let swiperCategories = new Swiper(".categories__container", {
   spaceBetween: 24,
   loop: true,
