@@ -1395,11 +1395,13 @@ padding-top: 1rem;
 .table__description,
 .table__price,
 .table__subtotal,
-.table__trash {
+.table__trash,
+.table__stock {
   font-size: var(--small-font-size);
 }
 
-.table__title {
+.table__title,
+.table__stock {
   color: var(--first-color);
 }
 
