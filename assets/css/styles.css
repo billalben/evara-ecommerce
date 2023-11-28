@@ -946,7 +946,7 @@ table {
   color: var(--body-color);
   padding-inline: 2rem;
   font-family: var(--second-font);
-  font-weight: 500px;
+  font-weight: 500;
   letter-spacing: 0.5px;
   cursor: pointer;
   transition: all 0.3s var(--transition);
@@ -1579,6 +1579,29 @@ padding-top: 1rem;
 }
 
 /*=============== COMPARE ===============*/
+.compare__table tr th,
+.compare__table tr td {
+  padding: .5rem;
+  border: 1px solid var(--border-color-alt);
+}
+
+.compare__table tr th {
+  color: var(--text-color-light);
+  font-size: var(--small-font-size);
+}
+
+.compare__table tr td {
+  text-align: center;
+}
+
+.compare__colors {
+  justify-content: center;
+}
+
+.table__weight,
+.table__dimension {
+  font-size: var(--small-font-size);
+}
 
 /*=============== LOGIN & REGISTER ===============*/
 .login-register__container {
