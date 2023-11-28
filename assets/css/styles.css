@@ -1621,6 +1621,91 @@ padding-top: 1rem;
 }
 
 /*=============== ACCOUNTS ===============*/
+.accounts__container {
+  grid-template-columns: 4fr 8fr;
+}
+
+.account__tabs {
+  border: 1px solid var(--border-color-alt);
+  border-radius: .25rem;
+  -webkit-border-radius: .25rem;
+  -moz-border-radius: .25rem;
+  -ms-border-radius: .25rem;
+  -o-border-radius: .25rem;
+}
+
+.account__tab {
+  padding: 1rem 2rem;
+  color: var(--title-color);
+  font-size: var(--small-font-size);
+  display: flex;
+  column-gap: .625rem;
+  cursor: pointer;
+  transition: all .3s var(--transition);
+  -webkit-transition: all .3s var(--transition);
+  -moz-transition: all .3s var(--transition);
+  -ms-transition: all .3s var(--transition);
+  -o-transition: all .3s var(--transition);
+}
+
+.account__tab.active-tab {
+  background-color: var(--first-color);
+  color: var(--body-color);
+}
+
+.account__tab:not(:last-child) {
+  border-bottom: 1px solid var(--border-color-alt);
+}
+
+.tab__content:not(.active-tab) {
+  display: none;
+}
+
+.tab__content {
+  border: 1px solid var(--border-color-alt);
+}
+
+.tab__header {
+  background-color: var(--container-color);
+  border-bottom: 1px solid var(--border-color-alt);
+  padding: 1rem;
+  font-size: var(--small-font-size);
+}
+
+.tab__body {
+  padding: 1rem;
+}
+
+.placed__order-table thead tr th {
+  color: var(--title-color);
+  text-align: left;
+}
+
+.placed__order-table thead tr th,
+.placed__order-table tbody tr td {
+  border: 1px solid var(--border-color-alt);
+  padding: .5rem;
+  font-size: var(--small-font-size);
+}
+
+.view__order,
+.edit {
+  color: var(--first-color);
+}
+
+.address {
+  font-style: normal;
+  font-size: var(--small-font-size);
+  line-height: 1.5;
+}
+
+.city {
+  margin-bottom: .25rem;
+}
+
+.edit {
+  font-size: var(--small-font-size);
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
